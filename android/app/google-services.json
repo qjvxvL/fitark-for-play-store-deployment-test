@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "791301072525",
+    "project_id": "fitark",
+    "storage_bucket": "fitark.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791301072525:android:8273ec551dd0c05d6164c4",
+        "android_client_info": {
+          "package_name": "com.example.fitark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791301072525-ng6344k4i0fmcgd6kucbhirsp693qbn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitark",
+            "certificate_hash": "d1b9b87936168ea4ed6dcc82ddfeee1f25a1def5"
+          }
+        },
+        {
+          "client_id": "791301072525-9or8k32kmiap5cv9o31i7ucnm6ns6s04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHx_VMrfY91qqNXq_tc6msUdtwdcdeqGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791301072525-9or8k32kmiap5cv9o31i7ucnm6ns6s04.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791301072525-g9memvno8p9l2fveoebrkpdcfjl4ed36.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fitark"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791301072525:android:fa230da4f0e1ec3c6164c4",
+        "android_client_info": {
+          "package_name": "dev.dwikiy.fitark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791301072525-2bpk8l1vv1tn86b482vodnp8coqmq2so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.dwikiy.fitark",
+            "certificate_hash": "d1b9b87936168ea4ed6dcc82ddfeee1f25a1def5"
+          }
+        },
+        {
+          "client_id": "791301072525-9or8k32kmiap5cv9o31i7ucnm6ns6s04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHx_VMrfY91qqNXq_tc6msUdtwdcdeqGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791301072525-9or8k32kmiap5cv9o31i7ucnm6ns6s04.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791301072525-g9memvno8p9l2fveoebrkpdcfjl4ed36.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fitark"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
