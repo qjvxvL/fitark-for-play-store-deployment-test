@@ -96,6 +96,7 @@ class MyApp extends StatelessWidget {
             theme: AppTheme.lightTheme,
             debugShowCheckedModeBanner: false,
             home: const SplashScreen(),
+            // my splash screen
           ),
         );
       },
