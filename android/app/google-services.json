@@ -66,6 +66,14 @@
           }
         },
         {
+          "client_id": "791301072525-dacgddrkkauirgtnv197tuia2al92jl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.dwikiy.fitark",
+            "certificate_hash": "22bab7d757cf00f9b1a1f6081757eac580cbc708"
+          }
+        },
+        {
           "client_id": "791301072525-9or8k32kmiap5cv9o31i7ucnm6ns6s04.apps.googleusercontent.com",
           "client_type": 3
         }

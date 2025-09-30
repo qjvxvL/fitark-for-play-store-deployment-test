@@ -2,6 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitark/screens/login_screen.dart';
 import 'package:fitark/services/auth_service.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+import 'home_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -18,6 +21,39 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final formKey = GlobalKey<FormState>();
   String errorMessage = '';
   bool isLoading = false;
+
+  Future<void> signInWithGoogle() async {
+      GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+    AuthCredential credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+    UserCredential userCredential =
+    await FirebaseAuth.instance.signInWithCredential(credential);
+    print(userCredential.user?.displayName);
+
+    _handleSuccessfulGoogleSignIn(userCredential);
+  }
+
+  void _handleSuccessfulGoogleSignIn(UserCredential userCredential) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+            'Welcome, ${userCredential.user?.displayName ?? userCredential.user?.email}!'),
+        backgroundColor: Colors.lightBlue,
+        duration: const Duration(seconds: 3),
+      ),
+    );
+
+    // Navigate to home screen
+    if (mounted && userCredential.user != null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+      );
+    }
+  }
 
   void register() async {
     if (controllerEmail.text.trim().isEmpty) {
@@ -318,7 +354,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   backgroundColor: Colors.white,
                                   elevation: 1,
                                 ),
-                                onPressed: () {},
+                                onPressed: signInWithGoogle,
                               ),
                             ),
                             const SizedBox(height: 12),

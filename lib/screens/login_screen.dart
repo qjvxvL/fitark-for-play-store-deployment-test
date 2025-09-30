@@ -413,7 +413,9 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           // Content
           SafeArea(
+
             child: SingleChildScrollView(
+
             child: Padding(
               padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom,),
               child: Padding(
@@ -422,6 +424,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     // Debug info
                     Container(
+                      height: 215,
                       padding: const EdgeInsets.all(8),
                       child: Column(
                         children: [
@@ -469,7 +472,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Column(
                           children: [
                             const Text(
-                              'FitFlow',
+                              'FitArk',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 48,
